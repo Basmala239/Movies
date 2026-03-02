@@ -33,7 +33,7 @@ class FavViewModel(
         .stateIn(
             scope = viewModelScope,
             started = SharingStarted.WhileSubscribed(5000),
-            initialValue = UiState.Loading // Start with Loading
+            initialValue = UiState.Loading
         )
 
     fun deleteFavMovie(movie: Movie) {
